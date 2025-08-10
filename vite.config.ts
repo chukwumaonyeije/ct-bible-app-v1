@@ -5,4 +5,3 @@ export default defineConfig({
   base: '/ct-bible-app-v1/',
   plugins: [react()],
 })
-
