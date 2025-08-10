@@ -20,8 +20,8 @@ import {
 import { auth } from "./app/firebase";
 
 // ---------- PWA: service worker registration ----------
+// TEMP disabled while debugging GH Pages. Re-enable later.
 function usePWA() {
-  // TEMP disable while debugging GH Pages:
   // useEffect(() => {
   //   if ('serviceWorker' in navigator) {
   //     const onLoad = () => {
@@ -33,7 +33,7 @@ function usePWA() {
   //     return () => window.removeEventListener('load', onLoad);
   //   }
   // }, []);
-}}
+}
 
 import AuthToggleButton from "./AuthToggleButton";
 

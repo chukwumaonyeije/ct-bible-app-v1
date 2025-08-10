@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "homepage": "https://chukwumaonyeije.github.io/ct-bible-app-v1",
   "scripts": {
     "dev": "vite",
     "build": "vite build && node ./scripts/workbox-build.mjs",

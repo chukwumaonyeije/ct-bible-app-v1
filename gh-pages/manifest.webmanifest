@@ -1,0 +1,11 @@
+{
+  "name": "Chukwuma Theology – Bible Study",
+  "short_name": "CT Bible",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1b3b6f",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
