@@ -21,18 +21,19 @@ import { auth } from "./app/firebase";
 
 // ---------- PWA: service worker registration ----------
 function usePWA() {
-  useEffect(() => {
-    if ("serviceWorker" in navigator) {
-      const onLoad = () => {
-        navigator.serviceWorker
-          .register("/service-worker.js")
-          .catch(() => {/* noop */});
-      };
-      window.addEventListener("load", onLoad);
-      return () => window.removeEventListener("load", onLoad);
-    }
-  }, []);
-}
+  // TEMP disable while debugging GH Pages:
+  // useEffect(() => {
+  //   if ('serviceWorker' in navigator) {
+  //     const onLoad = () => {
+  //       navigator.serviceWorker
+  //         .register(`${import.meta.env.BASE_URL}service-worker.js`)
+  //         .catch(() => {});
+  //     };
+  //     window.addEventListener('load', onLoad);
+  //     return () => window.removeEventListener('load', onLoad);
+  //   }
+  // }, []);
+}}
 
 import AuthToggleButton from "./AuthToggleButton";
 
